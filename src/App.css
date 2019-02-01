@@ -1,32 +1,103 @@
-.App {
-  text-align: center;
-}
+.login-container {
+  word-wrap: break-word;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
+.login-form {
+  width: 260px;
+  background-color: white;
+  box-shadow: 0 0 5px 0 #C4C4C4;
+  padding: 30px 45px; }
+  .login-form form {
+    display: flex;
+    flex-direction: column; }
+  .login-form .form-input-field {
+    overflow: hidden;
+    position: relative; }
+    .login-form .form-input-field input {
+      width: 100%;
+      margin: 0;
+      padding: 4px;
+      line-height: 30px;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      cursor: text;
+      outline: none;
+      margin: 20px 0; }
+      .login-form .form-input-field input:hover {
+        background-color: rgba(0, 0, 0, 0.05); }
+  .login-form .form-label-field {
+    color: #999;
+    font-size: 14px;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    transition: all 0.1s linear; }
+  .login-form button {
+    width: 100%;
+    background-color: #339753;
+    color: white;
+    outline: none;
+    border: 1px solid #339753;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-weight: 500;
+    margin-top: 20px; }
+  .login-form p {
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: #E36538;
+    font-size: 14px;
+    cursor: pointer; }
+    .login-form p:hover {
+      text-decoration: underline; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input:focus ~ .label {
+  bottom: 62px;
+  left: 0;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.login-nav {
+  margin-top: 122px; }
+  .login-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center; }
+    .login-nav ul li {
+      color: #A0A0A0;
+      font-size: 11px;
+      margin-right: 20px; }
+      .login-nav ul li:first-child {
+        list-style: none; }
+      .login-nav ul li:last-child {
+        margin-right: 0; }
+      .login-nav ul li span {
+        margin-left: -5px;
+        text-transform: uppercase; }
+        .login-nav ul li span:hover {
+          text-decoration: underline; }
+
+.login-logo {
   display: flex;
-  flex-direction: column;
+  color: #003169;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin-bottom: 100px; }
+  .login-logo #logo {
+    position: absolute; }
+  .login-logo h1 {
+    margin-right: 10px; }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E9EBEE; }

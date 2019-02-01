@@ -1,0 +1,116 @@
+.login-container {
+    word-wrap: break-word;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login-form {
+    width: 260px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 #C4C4C4;
+    padding: 30px 45px;   
+    form {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .form-input-field {          
+        overflow: hidden;   
+        position: relative;
+        input {
+            width: 100%;
+            margin: 0;
+            padding: 4px;
+            line-height: 30px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            cursor: text;
+            outline: none;
+            margin: 20px 0;
+            &:hover {
+                background-color: rgba(0,0,0,.05);
+            } 
+        }
+    }
+    .form-label-field {
+        color: #999;
+        font-size: 14px;
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        transition: all 0.1s linear;
+    }   
+    button {
+        width: 100%;
+        background-color: #339753;
+        color: white;
+        outline: none;
+        border: 1px solid #339753;
+        font-size: 16px;
+        line-height: 30px;
+        padding: 10px 20px;
+        border-radius: 2px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    p {
+        margin-top: 30px;
+        margin-bottom: 0;
+        text-decoration: none;
+        color: #E36538;
+        font-size: 14px;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.input:focus ~ .label{
+    bottom: 62px;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.login-nav {
+    margin-top: 122px;
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        li {
+            color: #A0A0A0;
+            font-size: 11px;
+            margin-right: 20px;
+            &:first-child {
+                list-style: none;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            span {
+                margin-left:-5px;
+                text-transform: uppercase;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.login-logo {
+    display: flex;
+    color: #003169;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    #logo {
+        position: absolute;
+    }
+    h1 {
+        margin-right: 10px;
+    }
+}
